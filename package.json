@@ -4,7 +4,7 @@
   "description": "",
   "private": "true",
   "scripts": {
-    "start": "http-server ./dist",
+    "start": "http-server ./dist -c-1",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
@@ -13,10 +13,11 @@
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "html-webpack-plugin": "^5.5.3",
+    "http-server": "^14.1.1"
   },
   "dependencies": {
-    "http-server": "^14.1.1",
     "lodash": "^4.17.21"
   }
 }

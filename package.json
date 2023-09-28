@@ -4,7 +4,7 @@
   "description": "",
   "private": "true",
   "scripts": {
-    "start": "http-server ./dist",
+    "start": "http-server ./dist -c-1",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
@@ -14,7 +14,10 @@
   "devDependencies": {
     "html-webpack-plugin": "^5.5.3",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "workbox-precaching": "^7.0.0",
+    "workbox-webpack-plugin": "^7.0.0",
+    "workbox-window": "^7.0.0"
   },
   "dependencies": {
     "http-server": "^14.1.1",
